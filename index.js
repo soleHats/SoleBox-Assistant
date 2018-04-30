@@ -66,16 +66,16 @@ function login() {
 							}
 						} else {
 							login();
-							console.log("Could not login successfully");
+							console.log("Could not login successfully. Retrying.");
 						}
 					} else {
 						login();
-						console.log("Error getting dashboard page");
+						console.log("Error getting dashboard page. Retrying.");
 					}
 				});
 			} else {
 				login();
-				console.log("Error obtaining login page");
+				console.log("Error obtaining login page. Retrying.");
 			}
 		});
 }
@@ -146,18 +146,18 @@ function checkoutWithURL(stoken) {
 											});
 										} else {
 											checkoutWithURL(stoken);
-											console.log("Unable to Checkout");
+											console.log("Unable to Checkout. Retrying.");
 										}
 									});
 							}
 						} else {
 							checkoutWithURL(stoken);
-							console.log("Unable to retrieve cart page");
+							console.log("Unable to retrieve cart page. Retrying.");
 						}
 					});
 			} else {
 				checkoutWithURL(stoken);
-				console.log("Unable to add item to cart");
+				console.log("Unable to add item to cart. Retrying.");
 			}
 		});
 }
@@ -219,13 +219,13 @@ function standaloneCheckout(stoken) {
 								});
 							} else {
 								standaloneCheckout(stoken);
-								console.log("Unable to Checkout");
+								console.log("Unable to Checkout. Retrying.");
 							}
 						});
 				}
 			} else {
 				standaloneCheckout(stoken);
-				console.log("Unable to retrieve cart page");
+				console.log("Unable to retrieve cart page. Retrying.");
 			}
 		});
 }
