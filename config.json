@@ -1,0 +1,15 @@
+{
+	"_comment": "If you disable discord, once PayPal payment is available, your 'preffered' browser will open with the paypal checkout link",
+	"_comment2": "If you leave the addtocarturl blank, the bot will try to checkout whatever is in your cart (cart holds on solebox)",
+	"email": "X@outlook.com",
+	"password": "XXX",
+	"addtocarturl": "",
+	"discord": false,
+	"discordwebhook": "https://discordapp.com/api/webhooks/XXX/XXX",
+	"time": {
+		"startAtSetTime": true,
+		"hour": "09",
+		"minute": "00",
+		"second": "00"
+	}
+}
